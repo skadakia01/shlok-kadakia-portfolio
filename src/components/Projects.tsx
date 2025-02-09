@@ -11,14 +11,14 @@ const projects = [
     //live: 'https://example.com',
     tags: ['Java']
   },
-  // {
-  //   title: 'Project 2',
-  //   description: 'Cloud-based machine learning application',
-  //   image: 'https://images.unsplash.com/photo-1555949963-ff9fe0c870eb',
-  //   github: 'https://github.com',
-  //   live: 'https://example.com',
-  //   tags: ['Python', 'AWS', 'TensorFlow']
-  // },
+  {
+    title: 'Skin Care Detection System',
+    description: 'The Skin Cancer Detection App uses machine learning to analyze skin lesion images for early cancer detection. Developed at DePaul University, it integrates deep learning models, a Python backend, and a web interface. The project highlights AI-driven healthcare solutions and computer vision expertise.',
+    image: '/src/public/Skin-Care-Detection-System .png',
+    github: 'https://github.com/johnsmillie-portfolio/Skin-Cancer-Detection-App',
+    //live: 'https://example.com',
+    tags: ['Python', 'React Js', 'Machine learning', 'Docker', 'TensorFlow',]
+  },
   // Add more projects as needed
 ];
 

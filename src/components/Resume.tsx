@@ -4,7 +4,7 @@ import { Download } from 'lucide-react';
 
 const Resume = () => {
   // Replace this with your actual resume PDF URL
-  const resumeUrl = "/src/public/Shlok_Kadakia_Resumee.pdf";
+  const resumeUrl = "/Shlok_Kadakia_Resumee.pdf";
   
   return (
     <section id="resume" className="py-20 bg-slate-50">

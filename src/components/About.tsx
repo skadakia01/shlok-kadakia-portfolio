@@ -279,7 +279,7 @@ const About = () => {
               className="relative"
             >
               <img
-                src="/src/public/profile.jpg"
+                src="/profile.jpg"
                 alt="Profile"
                 className="rounded-lg shadow-lg w-full max-w-md mx-auto"
               />

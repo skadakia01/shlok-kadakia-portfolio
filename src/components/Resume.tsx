@@ -3,7 +3,6 @@ import { motion } from 'framer-motion';
 import { Download } from 'lucide-react';
 
 const Resume = () => {
-  // Replace this with your actual resume PDF URL
   const resumeUrl = "/Shlok_Kadakia_Resumee.pdf";
   
   return (

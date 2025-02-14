@@ -14,7 +14,7 @@ const projects = [
   {
     title: 'Skin Care Detection System',
     description: 'The Skin Cancer Detection App uses machine learning to analyze skin lesion images for early cancer detection. Developed at DePaul University, it integrates deep learning models, a Python backend, and a web interface. The project highlights AI-driven healthcare solutions and computer vision expertise.',
-    image: '/Skin-Care-Detection-System-2.png.png',
+    image: '/Skin-Care-Detection-System-2.png',
     github: 'https://github.com/johnsmillie-portfolio/Skin-Cancer-Detection-App',
     //live: 'https://example.com',
     tags: ['Python', 'React Js', 'Machine learning', 'Docker', 'TensorFlow',]

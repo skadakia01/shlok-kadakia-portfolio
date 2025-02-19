@@ -1402,6 +1402,7 @@ const certifications: Certification[] = [
     skills: ["Data Analytics", "AWS Services", "Big Data"]
   },
   
+  
   {
     name: "AWS Academy Cloud Foundations",
     issuer: "Amazon Web Services (AWS)",
@@ -1411,6 +1412,8 @@ const certifications: Certification[] = [
     link: "https://www.credly.com/badges/11cdad48-10a1-4545-91d6-7e0da48a3610/print",
     skills: ["Cloud Computing", "AWS Core Services", "Cloud Architecture", "Cloud Fundamentals"]
   },
+
+  
 ];
 
 const experiences: Experience[] = [
@@ -1526,49 +1529,54 @@ const About = () => {
             </div>
           </div>
 
-          {/* Education Section */}
-<div className="mb-20">
-  <h3 className="text-3xl font-bold text-gray-800 mb-8 text-center">Education</h3>
-  <div className="relative">
-    {/* Vertical Timeline Line */}
-    <div className="absolute left-0 top-0 bottom-0 w-0.5 bg-blue-600"></div>
-    
-    {/* Education Items */}
-    <div className="space-y-12">
-      {education.map((edu, index) => (
-        <motion.div 
-          key={index} 
-          initial={{ opacity: 0 }} 
-          whileInView={{ opacity: 1 }} 
-          transition={{ duration: 0.5 }} 
-          className="relative pl-8"
-        >
-          {/* Timeline Dot */}
-          <div className="absolute left-0 top-2 w-2 h-2 rounded-full bg-blue-600 -translate-x-[3px]" />
-          
-          <h4 className="text-xl font-bold text-gray-800 mb-2">{edu.degree}</h4>
-          <div className="flex items-center text-gray-500">
-            <BookOpen size={16} className="mr-2" />
-            <span>{edu.university}</span>
-            <Calendar size={16} className="ml-4 mr-2" />
-            <span>{edu.period}</span>
-          </div>
-          {edu.description && (
-            <ul className="mt-2 text-gray-600 list-disc ml-4">
-              {edu.description.map((desc, idx) => (
-                <li key={idx}>{desc}</li>
-              ))}
-            </ul>
-          )}
-        </motion.div>
-      ))}
-    </div>
-  </div>
-</div>
 
+
+          {/* Education Section */}
+        <div className="mb-20">
+          <h3 className="text-3xl font-bold text-gray-800 mb-8 text-center">Education</h3>
+          <div className="relative">
+            {/* Vertical Timeline Line */}
+            <div className="absolute left-0 top-0 bottom-0 w-0.5 bg-blue-600"></div>
+            
+            {/* Education Items */}
+            <div className="space-y-12">
+              {education.map((edu, index) => (
+                <motion.div 
+                  key={index} 
+                  initial={{ opacity: 0 }} 
+                  whileInView={{ opacity: 1 }} 
+                  transition={{ duration: 0.5 }} 
+                  className="relative pl-8"
+                >
+                  {/* Timeline Dot */}
+                  <div className="absolute left-0 top-2 w-2 h-2 rounded-full bg-blue-600 -translate-x-[3px]" />
+                  
+                  <h4 className="text-xl font-bold text-gray-800 mb-2">{edu.degree}</h4>
+                  <div className="flex items-center text-gray-500">
+                    <BookOpen size={16} className="mr-2" />
+                    <span>{edu.university}</span>
+                    <Calendar size={16} className="ml-4 mr-2" />
+                    <span>{edu.period}</span>
+                  </div>
+                  {edu.description && (
+                    <ul className="mt-2 text-gray-600 list-disc ml-4">
+                      {edu.description.map((desc, idx) => (
+                        <li key={idx}>{desc}</li>
+                      ))}
+                    </ul>
+                  )}
+                </motion.div>
+              ))}
+            </div>
+          </div>
+        </div>
+
+
+{/* below is the certification display 3 in a row  */}
 
 
           {/* Certifications Section */}
+
 <div className="mb-20">
   <h3 className="text-3xl font-bold text-gray-800 mb-8 text-center">Certifications</h3>
   <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -1638,6 +1646,90 @@ const About = () => {
   </div>
 </div>
 
+
+
+
+
+
+
+
+
+{/* Below will be certification display 4 in the row  */}
+
+
+
+{/* Certifications Section */}
+{/* <div className="mb-20">
+  <h3 className="text-3xl font-bold text-gray-800 mb-8 text-center">Certifications</h3>
+  <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+    {certifications.map((cert, index) => (
+      <motion.div
+        key={index}
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5 }}
+        className="bg-white rounded-lg shadow-md hover:shadow-lg transition-all duration-300"
+      > */}
+        {/* Certificate Header with Badge */}
+        {/* <div className="relative">
+          <div className="absolute inset-0 bg-gradient-to-b from-blue-600/10 to-blue-600/5" />
+          <div className="p-3 flex justify-center">
+            <motion.img
+              src={cert.badge}
+              alt={`${cert.name} Badge`}
+              className="w-20 h-20 object-contain"
+              whileHover={{ scale: 1.05 }}
+              transition={{ type: "spring", stiffness: 300 }}
+            />
+          </div>
+        </div> */}
+
+        {/* Certificate Content */}
+        {/* <div className="p-3 bg-white">
+          <div className="mb-2">
+            <h4 className="text-base font-bold text-gray-800 mb-1 line-clamp-2">
+              {cert.name}
+            </h4>
+            <p className="text-gray-600 text-xs">{cert.issuer}</p>
+          </div>
+
+          <div className="space-y-1.5">
+            <div className="flex justify-between text-xs">
+              <span className="text-gray-600">Issued:</span>
+              <span className="text-gray-800 font-medium">{cert.issuedDate}</span>
+            </div>
+            <div className="flex justify-between text-xs">
+              <span className="text-gray-600">Expires:</span>
+              <span className="text-gray-800 font-medium">{cert.expirationDate}</span>
+            </div>
+            <div className="flex flex-wrap gap-1 mt-2">
+              {cert.skills.map((skill, idx) => (
+                <span
+                  key={idx}
+                  className="px-1.5 py-0.5 bg-blue-50 text-blue-600 text-xs font-medium rounded-full"
+                >
+                  {skill}
+                </span>
+              ))}
+            </div>
+            <a
+              href={cert.link}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center mt-2 text-blue-600 hover:text-blue-700 transition-colors text-xs"
+            >
+              <span className="mr-1">View Certificate</span>
+              <ExternalLink size={12} />
+            </a>
+          </div>
+        </div>
+      </motion.div>
+    ))}
+  </div>
+</div> */}
+
+{/* below Skills 3 in the row  */}
+
           {/* Skills Section */}
           <div>
             <h3 className="text-3xl font-bold text-gray-800 mb-8 text-center">Skills</h3>
@@ -1663,6 +1755,50 @@ const About = () => {
               ))}
             </div>
           </div>
+
+
+{/* Skills for 4 in row  */}
+
+
+
+{/* Skills Section */}
+{/* <div>
+  <h3 className="text-3xl font-bold text-gray-800 mb-8 text-center">Skills</h3>
+  <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+    {Object.entries(skills).map(([category, skillList]) => (
+      <motion.div
+        key={category}
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        transition={{ duration: 0.5 }}
+        className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300"
+      >
+        <h4 className="text-xl font-bold text-gray-800 mb-4">{category}</h4>
+        <ul className="space-y-2">
+          {skillList.map((skill, i) => (
+            <li key={i} className="text-gray-600 flex items-center">
+              <div className="w-2 h-2 rounded-full bg-blue-600 mr-2" />
+              {skill}
+            </li>
+          ))}
+        </ul>
+      </motion.div>
+    ))}
+  </div>
+</div>
+
+
+
+ */}
+
+
+
+
+
+
+
+
+
         </motion.div>
       </div>
     </section>

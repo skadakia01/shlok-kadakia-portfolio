@@ -1324,13 +1324,23 @@ interface Certification {
 
 // Data
 const skills: Skill = {
-  'Full Stack': [
-    'JavaScript/TypeScript',
-    'React.js',
+  // 'Full Stack': [
+  //   'JavaScript/TypeScript',
+  //   'React.js',
+  //   'Node.js',
+  //   'Python',
+  //   'MongoDB',
+  //   'PostgreSQL'
+  // ],
+  'Languages': [
+    'Java',
+    'JavaScript',
+    'SQL',
     'Node.js',
     'Python',
     'MongoDB',
-    'PostgreSQL'
+    'C',
+    'C++',
   ],
   'Cloud': [
     'AWS',
@@ -1339,20 +1349,33 @@ const skills: Skill = {
     'Kubernetes',
     'CI/CD'
   ],
-  'ML/AI': [
-    'TensorFlow',
-    'PyTorch',
-    'Scikit-learn',
-    'Computer Vision',
-    'NLP'
-  ]
+  'Framework': [
+    'React.js',
+    'TypeScript',
+    'Dot.NET',
+    'PostgreSQL',
+    'Express.js',
+    
+  ],
+  // 'ML/AI': [
+  //   'TensorFlow',
+  //   'PyTorch',
+  //   'Scikit-learn',
+  //   'Computer Vision',
+  //   'NLP'
+  // ],
+  // 'Tools': [
+  //   'Visual Code',
+  //   'Github'
+    
+  // ]
 };
 
 const education: Education[] = [
   {
     degree: "Master of Science in Computer Science",
     university: "DePaul University, Chicago, IL",
-    period: "Expected June 2025",
+    period: "Expected November 2025",
     description: [
       "Relevant Coursework: Database Systems, Software Engineering, Distributed Systems, Applied Algorithms."
     ]
@@ -1362,7 +1385,7 @@ const education: Education[] = [
     university: "Navrachana University, Vadodara, India",
     period: "June 2019 - June 2023",
     description: [
-      "Minors in Internet of Things.",
+      // "Minors in Internet of Things.",
       "Relevant Coursework: Networking, Operating Systems, Algorithms, AI, Cloud Computing."
     ]
   }
@@ -1386,7 +1409,7 @@ const certifications: Certification[] = [
     expirationDate: "October 2024",
     badge: "https://images.credly.com/images/73e4a58b-a8ef-41a3-a7db-9183dd269882/image.png",
     link: "https://www.credly.com/badges/11cdad48-10a1-4545-91d6-7e0da48a3610/print",
-    skills: ["Cloud Computing", "AWS Core Services", "Cloud Architecture"]
+    skills: ["Cloud Computing", "AWS Core Services", "Cloud Architecture", "Cloud Fundamentals"]
   },
 ];
 
@@ -1504,26 +1527,46 @@ const About = () => {
           </div>
 
           {/* Education Section */}
-          <div className="mb-20">
-            <h3 className="text-3xl font-bold text-gray-800 mb-8 text-center">Education</h3>
-            {education.map((edu, index) => (
-              <motion.div 
-                key={index} 
-                initial={{ opacity: 0 }} 
-                whileInView={{ opacity: 1 }} 
-                transition={{ duration: 0.5 }} 
-                className="relative pl-8"
-              >
-                <h4 className="text-xl font-bold text-gray-800 mb-2">{edu.degree}</h4>
-                <div className="flex items-center text-gray-500">
-                  <BookOpen size={16} className="mr-2" />
-                  <span>{edu.university}</span>
-                  <Calendar size={16} className="ml-4 mr-2" />
-                  <span>{edu.period}</span>
-                </div>
-              </motion.div>
-            ))}
+<div className="mb-20">
+  <h3 className="text-3xl font-bold text-gray-800 mb-8 text-center">Education</h3>
+  <div className="relative">
+    {/* Vertical Timeline Line */}
+    <div className="absolute left-0 top-0 bottom-0 w-0.5 bg-blue-600"></div>
+    
+    {/* Education Items */}
+    <div className="space-y-12">
+      {education.map((edu, index) => (
+        <motion.div 
+          key={index} 
+          initial={{ opacity: 0 }} 
+          whileInView={{ opacity: 1 }} 
+          transition={{ duration: 0.5 }} 
+          className="relative pl-8"
+        >
+          {/* Timeline Dot */}
+          <div className="absolute left-0 top-2 w-2 h-2 rounded-full bg-blue-600 -translate-x-[3px]" />
+          
+          <h4 className="text-xl font-bold text-gray-800 mb-2">{edu.degree}</h4>
+          <div className="flex items-center text-gray-500">
+            <BookOpen size={16} className="mr-2" />
+            <span>{edu.university}</span>
+            <Calendar size={16} className="ml-4 mr-2" />
+            <span>{edu.period}</span>
           </div>
+          {edu.description && (
+            <ul className="mt-2 text-gray-600 list-disc ml-4">
+              {edu.description.map((desc, idx) => (
+                <li key={idx}>{desc}</li>
+              ))}
+            </ul>
+          )}
+        </motion.div>
+      ))}
+    </div>
+  </div>
+</div>
+
+
 
           {/* Certifications Section */}
 <div className="mb-20">

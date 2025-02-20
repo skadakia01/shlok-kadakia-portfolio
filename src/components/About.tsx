@@ -1412,6 +1412,15 @@ const certifications: Certification[] = [
     link: "https://www.credly.com/badges/11cdad48-10a1-4545-91d6-7e0da48a3610/print",
     skills: ["Cloud Computing", "AWS Core Services", "Cloud Architecture", "Cloud Fundamentals"]
   },
+  {
+    name: "Cybersecurity Essentials",
+    issuer: "Cisco Networking Academy",
+    issuedDate: "April 2023",
+    expirationDate: "",
+    badge: "https://images.credly.com/size/680x680/images/054913b2-e271-49a2-a1a4-9bf1c1f9a404/CyberEssentials.png",
+    link: "https://www.credly.com/badges/739fdd6f-88ca-406f-b52b-76c539574cd6",
+    skills: ["Network Security", "Encryption" ]
+  },
 
   
 ];

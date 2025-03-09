@@ -16,7 +16,7 @@ const projects = [
     description: 'The Skin Cancer Detection App uses machine learning to analyze skin lesion images for early cancer detection. Developed at DePaul University, it integrates deep learning models, a Python backend, and a web interface. The project highlights AI-driven healthcare solutions and computer vision expertise.',
     image: '/Skin-Care-Detection-System-2.png',
     github: 'https://github.com/johnsmillie-portfolio/Skin-Cancer-Detection-App',
-    live: 'https://skin-cancer-detection-app.vercel.app/',
+    live: 'https://skin-cancer-detection-app.onrender.com/',
     tags: ['Python', 'React Js', 'Machine learning', 'Docker', 'TensorFlow',]
   },
   // Add more projects as needed

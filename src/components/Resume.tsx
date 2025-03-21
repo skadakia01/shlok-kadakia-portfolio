@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 import { Download } from 'lucide-react';
 
 const Resume = () => {
-  const resumeUrl = "/Shlok_Kadakia_Resumee.pdf";
+  const resumeUrl = "/Shlok_Kadakia_Resume.pdf";
   
   return (
     <section id="resume" className="py-20 bg-slate-50">

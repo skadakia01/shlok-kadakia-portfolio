@@ -1,0 +1,40 @@
+name: Deploy
+
+on:
+  workflow_dispatch:
+    inputs:
+      environment:
+        description: 'Environment to deploy to'
+        required: true
+        default: 'production'
+        type: choice
+        options:
+          - production
+          - staging
+  
+  # Auto-deploy on release
+  release:
+    types: [published]
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    environment: ${{ github.event.inputs.environment || 'production' }}
+    
+    steps:
+    - name: Deploy to production
+      if: ${{ github.event.inputs.environment == 'production' || github.event_name == 'release' }}
+      # This is a placeholder for your actual deployment logic
+      # For a real deployment, you might use:
+      # - SSH into your server and pull the latest Docker image
+      # - Deploy to a cloud provider (AWS, Azure, GCP)
+      # - Use a service like Vercel, Netlify, or GitHub Pages
+      run: |
+        echo "Deploying to production"
+        # Add your deployment commands here
+        
+    - name: Deploy to staging
+      if: ${{ github.event.inputs.environment == 'staging' }}
+      run: |
+        echo "Deploying to staging"
+        # Add your staging deployment commands here

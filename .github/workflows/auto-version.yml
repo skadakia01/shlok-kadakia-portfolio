@@ -1,0 +1,84 @@
+name: Auto Version Bump
+
+on:
+  push:
+    branches: [ main ]
+    paths-ignore:
+      - 'package.json'
+      - 'package-lock.json'
+      - 'README.md'
+      - '.github/**'
+
+jobs:
+  version-bump:
+    runs-on: ubuntu-latest
+    if: '!contains(github.event.head_commit.message, ''Bump version'')'
+    
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+      with:
+        fetch-depth: 0
+
+    - name: Set up Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version: '20'
+    
+    - name: Determine version bump
+      id: bump
+      run: |
+        commit_msg="${{ github.event.head_commit.message }}"
+        
+        if [[ $commit_msg == *"BREAKING CHANGE"* || $commit_msg == *"!:"* ]]; then
+          echo "bump=major" >> $GITHUB_OUTPUT
+        elif [[ $commit_msg == *"feat:"* ]]; then
+          echo "bump=minor" >> $GITHUB_OUTPUT
+        else
+          echo "bump=patch" >> $GITHUB_OUTPUT
+        fi
+    
+    - name: Bump version
+      id: version
+      run: |
+        # Get current version
+        current_version=$(node -p "require('./package.json').version")
+        echo "Current version: $current_version"
+        
+        # Split version into parts
+        IFS='.' read -ra VERSION_PARTS <<< "$current_version"
+        MAJOR=${VERSION_PARTS[0]}
+        MINOR=${VERSION_PARTS[1]}
+        PATCH=${VERSION_PARTS[2]}
+        
+        # Bump version based on commit message
+        if [[ "${{ steps.bump.outputs.bump }}" == "major" ]]; then
+          MAJOR=$((MAJOR + 1))
+          MINOR=0
+          PATCH=0
+        elif [[ "${{ steps.bump.outputs.bump }}" == "minor" ]]; then
+          MINOR=$((MINOR + 1))
+          PATCH=0
+        else
+          PATCH=$((PATCH + 1))
+        fi
+        
+        new_version="$MAJOR.$MINOR.$PATCH"
+        echo "New version: $new_version"
+        echo "version=$new_version" >> $GITHUB_OUTPUT
+        
+        # Update package.json
+        npm version $new_version --no-git-tag-version
+    
+    - name: Commit changes
+      run: |
+        git config --local user.email "action@github.com"
+        git config --local user.name "GitHub Action"
+        git add package.json package-lock.json
+        git commit -m "Bump version to ${{ steps.version.outputs.version }}"
+    
+    - name: Push changes
+      uses: ad-m/github-push-action@master
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        branch: main

@@ -4,14 +4,6 @@ import { Github, ExternalLink } from 'lucide-react';
 
 const projects = [
   {
-    title: 'North-West-Corner-Java',
-    description: 'Transportation problems are a subset of Linear Programming Problems (LPPs) in which objects are carried from a set of sources to a set of destinations while considering the supply and demand of the sources and destinations in minimizing the overall cost of transportation.',
-    image: 'https://images.unsplash.com/photo-1517694712202-14dd9538aa97',
-    github: 'https://github.com/skadakia01/North-West-Corner-Java',
-    //live: 'https://example.com',
-    tags: ['Java']
-  },
-  {
     title: 'Skin Cancer Detection System',
     description: 'The Skin Cancer Detection App uses machine learning to analyze skin lesion images for early cancer detection. Developed at DePaul University, it integrates deep learning models, a Python backend, and a web interface. The project highlights AI-driven healthcare solutions and computer vision expertise.',
     image: '/Skin-Care-Detection-System-2.png',
@@ -28,6 +20,18 @@ const projects = [
     tags: ['DevOps', 'Python', 'React Js', 'Machine learning', 'Docker', 'TensorFlow',]
   },
   // Add more projects as needed
+
+
+  
+  // {
+  //   title: 'North-West-Corner-Java',
+  //   description: 'Transportation problems are a subset of Linear Programming Problems (LPPs) in which objects are carried from a set of sources to a set of destinations while considering the supply and demand of the sources and destinations in minimizing the overall cost of transportation.',
+  //   image: 'https://images.unsplash.com/photo-1517694712202-14dd9538aa97',
+  //   github: 'https://github.com/skadakia01/North-West-Corner-Java',
+  //   //live: 'https://example.com',
+  //   tags: ['Java']
+  // },
+  
 ];
 
 const ProjectCard = ({ project, index }) => {

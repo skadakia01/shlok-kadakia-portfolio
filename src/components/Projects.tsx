@@ -23,10 +23,8 @@ const projects = [
     title: 'StreamForge',
     description: 'Monitor your CI/CD pipelines and performance metrics with StreamForge, a comprehensive dashboard built with React and Node.js. It provides real-time insights into your development processes, helping teams optimize workflows and improve efficiency.',
     image: '/StreamForge.png',
-    //github: 'https://github.com/johnsmillie-portfolio/Skin-Cancer-Detection-App',
-    github: '/StreamForge Coming Soon.png',
-    live: '/StreamForge Coming Soon.png',
-    //live: 'https://skin-cancer-detection-app.onrender.com/',
+    github: 'https://github.com/skadakia01/StreamForge',
+    live: 'https://streamforge-production.vercel.app/',
     tags: ['DevOps', 'Python', 'React Js', 'Machine learning', 'Docker', 'TensorFlow',]
   },
   // Add more projects as needed

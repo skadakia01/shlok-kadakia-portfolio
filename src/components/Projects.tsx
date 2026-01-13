@@ -34,7 +34,16 @@ const projects = [
   
 ];
 
-const ProjectCard = ({ project, index }) => {
+interface Project {
+  title: string;
+  description: string;
+  image: string;
+  github: string;
+  live: string;
+  tags: string[];
+}
+
+const ProjectCard = ({ project, index }: { project: Project; index: number }) => {
   return (
     <motion.div
       initial={{ opacity: 0, y: 20 }}

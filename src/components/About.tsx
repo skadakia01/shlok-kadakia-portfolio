@@ -1347,6 +1347,8 @@ const skills: Skill = {
     'Azure',
     'Docker',
     'Kubernetes',
+    'Terraform',
+    'Jenkins',
     'CI/CD'
   ],
   'Framework': [
@@ -1408,7 +1410,7 @@ const certifications: Certification[] = [
     issuer: "Amazon Web Services (AWS)",
     issuedDate: "October 2021",
     expirationDate: "October 2024",
-    badge: "https://images.credly.com/images/73e4a58b-a8ef-41a3-a7db-9183dd269882/image.png",
+    badge: "https://images.credly.com/images/e3541a0c-dd4a-4820-8052-5001006efc85/blob",
     link: "https://www.credly.com/badges/11cdad48-10a1-4545-91d6-7e0da48a3610/print",
     skills: ["Cloud Computing", "AWS Core Services", "Cloud Architecture", "Cloud Fundamentals"]
   },
@@ -1427,32 +1429,31 @@ const certifications: Certification[] = [
 
 const experiences: Experience[] = [
   {
-    title: 'Full Stack Developer Intern',
+    title: 'Backend Developer & SDE I',
     skil: '',
     company: 'Cloudinfosoft™',
     place: 'Vadodara',
-    period: 'Jan 2023 - Jun 2023',
+    period: 'May 2022 - Jun 2023',
     description: [
-      'Design, Development, and maintenance of critical server-side components for .NET applications, enhancing system architecture and operational efficiency.',
-      'Developed and seamlessly integrated RESTful APIs facilitating communication among applications client- side components, resulting in a 30% improvement in functionality and response time.',
-      'Collaborated cross-functionally with a team of 5+ developers and designers to drive continuous improvements, resulting in a 15% acceleration in project delivery timelines and a 100% client satisfaction rate.',
-      'Led the development and execution of robust data storage strategies, implementing scalable database solutions and storage systems that supported a 20% increase in data handling efficiency.',
-      'Directed frontend development initiatives leveraging React JS, contributing to the creation of intuitive, responsive user interfaces that improved user engagement metrics by 25%.',
-      'Collaborated cross-functionally with a team of 5+ developers and designers to drive continuous improvements, resulting in a 15% acceleration in project delivery timelines and a 100% client satisfaction rate.'
+      'Spearheaded the architectural redesign of legacy backend modules into a modern Microservices-based ecosystem using Java and Node.js, which successfully decoupled service dependencies and improved system response times by 35% while enabling the platform to support a 20% growth in simultaneous user traffic without performance degradation.',
+      'Drove the adoption of automated end-to-end testing protocols as the technical lead for QA automation, where I authored over 50 comprehensive test cases and integrated them into GitLab CI pipelines to reduce production deployment errors by 30% and ensure 99.9% system reliability across high-frequency release cycles.',
+      'Architected and deployed fault-tolerant deployment scripts featuring automated rollback mechanisms and advanced error-handling logic, which resulted in a 65% reduction in production incidents and significantly enhanced the engineering teams confidence during critical feature launches.',
+      'Orchestrated the integration of a real-time distributed performance monitoring system to track complex health metrics; this leadership initiative boosted operational visibility by 85% and halved the mean time to resolution (MTTR) by providing the engineering department with actionable, data-driven insights.',
+      'Championed the transition to containerized environments using Docker and Kubernetes, where I managed the creation of standardized container images that effectively eliminated 85% of environment inconsistencies between development and production, thereby streamlining the delivery of mission-critical application updates.',
+      'Owned the optimization of complex SQL and NoSQL database schemas in PostgreSQL and MongoDB, implementing advanced indexing strategies and query refactoring that cut data retrieval latency by 35% for the platforms highest-traffic application modules.'
     ]
   },
   {
-    title: 'UI/UX Developer Intern',
+    title: 'Full Stack Developer',
     skil: 'User Interface, User Experience',
     company: 'Vardaam Web Solutions Pvt. Ltd',
     place: 'Vadodara',
-    period: 'May 2022 - Nov 2022',
+    period: 'May 2021 - April 2022 ',
     description: [
-      'Developed and standardized a comprehensive design language that included specific color schemes, typography choices, and icon sets, leading to a 40% increase in brand consistency across all digital platforms.',
-      'Collaborated with designers, developers, and cross-functional teams to translate design concepts into functional interfaces, resulting in a 20% reduction in a project iteration time.',
-      'Illustrated Wireframes, High-fidelity Mockups, and Interactive prototypes to visualize design concepts and user interactions using tools like Figma and Adobe XD.',
-      'Redesign of 5 major projects, directly contributing to a 30% improvement in user engagement and a 25% increase in user satisfaction scores through the introduction of user-centered design principles.',
-      'Conducted usability testing with over 20+ participants to gather actionable feedback, leading to iterative design improvements that enhanced user experience and interface usability by over 35%.'
+      'Led the frontend optimization project by migrating legacy interfaces to a modern React.js and Next.js architecture, which slashed user onboarding time by 50% and achieved a 95% accessibility score while enhancing cross-device performance and user engagement.',
+      'Facilitated collaborative technical workshops between UI/UX designers and the engineering team to bridge communication gaps and refine user workflows, resulting in a 35% increase in user retention through the delivery of more intuitive navigation and faster product iterations.',
+      'Optimized client-side state management and data fetching strategies, which reduced the initial page load time by 45% and significantly improved Core Web Vitals, leading to higher search engine rankings and a measurably better overall user experience.',
+      'Initiated a code-standardization drive by creating a modular framework for frontend component libraries, which reduced the time required for new feature iterations by 40% and ensured visual and functional consistency across the entire web application suite.',
     ]
   }
 ];
@@ -1483,7 +1484,7 @@ const About = () => {
               className="relative"
             >
               <img
-                src="/profile.jpg"
+                src="/profile2.jpg"
                 alt="Profile"
                 className="rounded-lg shadow-lg w-full max-w-md mx-auto"
               />
@@ -1497,14 +1498,20 @@ const About = () => {
             >
               <h2 className="text-4xl font-bold text-gray-800 mb-6">About Me</h2>
               <p>
-                Hi, I'm Shlok! Master's student in Computer Science at DePaul University, with a strong foundation in software development, cloud technologies, and full-stack development. Proficient in languages such as Java, JavaScript, Python, and SQL, I have experience building web applications using React.js and am passionate about the potential of cloud infrastructure and DevOps to improve efficiency and scalability.<br/><br/>
+                Hi, I'm Shlok! Graduated Master's student in Computer Science from DePaul University, Chicago.<br/><br/>
               </p>
               <p>
+              Software Engineer with over 2+ years of experience in full stack development, DevOps automation, and cloud infrastructure. Proven track record in optimizing system performance, reducing deployment latency by 70%, and architecting scalable distributed systems. Expert in Java, Python, and React, with a deep focus on building fault tolerant CI/CD pipelines and AI integrated monitoring tools. Committed to continuous learning in Machine Learning and Open-Source Development to drive innovation and system efficiency.
+              </p>
+              {/* <p>
+                Hi, I'm Shlok! Graduated Master's student in Computer Science from DePaul University, with a strong foundation in software development, cloud technologies, and full-stack development. Proficient in languages such as Java, JavaScript, Python, and SQL, I have experience building web applications using React.js and am passionate about the potential of cloud infrastructure and DevOps to improve efficiency and scalability.<br/><br/>
+              </p> */}
+              {/* <p>
                 My technical experience includes developing and optimizing applications, managing databases, and working with teams to deliver projects in Agile environments. I'm continuously learning and exploring new technologies, particularly in the DevOps and cloud computing space, and am eager to bring my skills to impactful software development roles. <br/><br/>
-              </p>
-              <p>
+              </p> */}
+              {/* <p>
                 Currently, I am seeking software development internships or full-time roles that will allow me to contribute to high-quality projects while advancing my expertise in cloud technologies and full-stack development. Let's connect and discuss how I can bring value to your team!
-              </p>
+              </p> */}
             </motion.div>
           </div>
 

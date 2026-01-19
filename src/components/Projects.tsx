@@ -4,12 +4,12 @@ import { Github, ExternalLink } from 'lucide-react';
 
 const projects = [
   {
-    title: 'CareerOS',
-    description: 'Career OS is an enterprise grade, AI-powered career management platform engineered to revolutionize the job search experience. This sophisticated SaaS application combines advanced machine learning capabilities with intuitive user experience design, enabling professionals to strategically manage their career trajectory, optimize application workflows, and leverage data-driven insights for accelerated career growth. Built with modern web technologies and following industry best practices, this platform demonstrates expertise in full-stack development, system architecture design, and human-centered product thinking.',
+    title: 'MyCareerOS',
+    description: 'MyCareerOS is an enterprise grade, AI-powered career management platform engineered to revolutionize the job search experience. This sophisticated SaaS application combines advanced machine learning capabilities with intuitive user experience design, enabling professionals to strategically manage their career trajectory, optimize application workflows, and leverage data-driven insights for accelerated career growth. Built with modern web technologies and following industry best practices, this platform demonstrates expertise in full-stack development, system architecture design, and human-centered product thinking.',
     image: '/CareerOS.png',
-    //github: 'https://github.com/skadakia01/StreamForge',
-    //live: 'https://streamforge-production.vercel.app/',
-    tags: ['DevOps', 'Python', 'React Js', 'Machine learning', 'Docker', 'TensorFlow',]
+    github: 'https://github.com/skadakia01/MyCareerOS',
+    live: 'https://mycareeros.vercel.app/',
+    tags: ['DevOps', 'TypeScript', 'React Js', 'SupaBase',]
   },
   {
     title: 'Skin Cancer Detection System',

@@ -1502,6 +1502,15 @@ const About = () => {
               </p>
               <p>
               Software Engineer with over 2+ years of experience in full stack development, DevOps automation, and cloud infrastructure. Proven track record in optimizing system performance, reducing deployment latency by 70%, and architecting scalable distributed systems. Expert in Java, Python, and React, with a deep focus on building fault tolerant CI/CD pipelines and AI integrated monitoring tools. Committed to continuous learning in Machine Learning and Open-Source Development to drive innovation and system efficiency.
+
+{/* Photo & Memories button */}
+
+<a href="/memories"
+  className="inline-block mt-6 px-6 py-3 rounded-lg bg-gradient-to-r from-blue-600 to-blue-700 text-white hover:from-blue-700 hover:to-blue-800 transition-all shadow-lg">
+  Photography & Memories 
+  {/* Click Here to know more 😎 */}
+</a>
+
               </p>
               {/* <p>
                 Hi, I'm Shlok! Graduated Master's student in Computer Science from DePaul University, with a strong foundation in software development, cloud technologies, and full-stack development. Proficient in languages such as Java, JavaScript, Python, and SQL, I have experience building web applications using React.js and am passionate about the potential of cloud infrastructure and DevOps to improve efficiency and scalability.<br/><br/>
@@ -1513,7 +1522,15 @@ const About = () => {
                 Currently, I am seeking software development internships or full-time roles that will allow me to contribute to high-quality projects while advancing my expertise in cloud technologies and full-stack development. Let's connect and discuss how I can bring value to your team!
               </p> */}
             </motion.div>
+
+                
+
+
+
+
           </div>
+
+          
 
           {/* Experience Section */}
           <div className="mb-20">

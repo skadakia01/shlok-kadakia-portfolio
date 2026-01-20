@@ -10,7 +10,7 @@ export type Memory = {
   export const memories: Memory[] = [
     {
       id: 1,
-      src: '../../../public/photography/Chicago1.png',
+      src: '/photography/Chicago1.png',
       category: 'Food',
       date: '2026-01-04',
       title: 'StarBucks Reserve',
@@ -26,7 +26,7 @@ export type Memory = {
     // },
     {
         id: 3,
-        src: '../../../public/photography/Chicago3.png',
+        src: '/photography/Chicago3.png',
         category: 'Chicago',
         date: '2025-12-16',
         title: 'Goldern Evening at North Center',
@@ -34,7 +34,7 @@ export type Memory = {
       },
       {
         id: 4,
-        src: '../../../public/photography/Chicago4.png',
+        src: '/photography/Chicago4.png',
         category: 'Nature',
         date: '2025-12-02',
         title: 'Snowy morning in Lincoln Park',
@@ -42,7 +42,7 @@ export type Memory = {
       },
       {
         id: 5,
-        src: '../../../public/photography/Chicago5.png',
+        src: 'photography/Chicago5.png',
         category: 'Chicago',
         date: '2025-11-23',
         title: 'Protrait from Washington Library in a sunny day',
@@ -50,7 +50,7 @@ export type Memory = {
       },
       {
         id: 6,
-        src: '../../../public/photography/Chicago6.png',
+        src: '/photography/Chicago6.png',
         category: 'Chicago',
         date: '2025-09-27',
         title: 'Autumn Vibes at uptown Chicago',
@@ -58,7 +58,7 @@ export type Memory = {
       },
       {
         id: 7,
-        src: '../../../public/photography/Newyork7.png',
+        src: '/photography/Newyork7.png',
         category: 'New York',
         date: '2025-09-26',
         title: 'Skyline of New York City from new jersey',
@@ -66,7 +66,7 @@ export type Memory = {
       },
       {
         id: 8,
-        src: '../../../public/photography/Newyork8.png',
+        src: '/photography/Newyork8.png',
         category: 'New York',
         date: '2025-09-25',
         title: 'Watkins Glen State Park',
@@ -74,7 +74,7 @@ export type Memory = {
       },
       {
         id: 9,
-        src: '../../../public/photography/Newyork9.png',
+        src: '/photography/Newyork9.png',
         category: 'New York',
         date: '2025-09-22',
         title: 'Vessel at Hudson Yards',
@@ -82,7 +82,7 @@ export type Memory = {
       },
       {
         id: 10,
-        src: '../../../public/photography/Newyork10.png',
+        src: '/photography/Newyork10.png',
         category: 'New York',
         date: '2025-09-21',
         title: 'Dumbo Park View',
@@ -90,7 +90,7 @@ export type Memory = {
       },
       {
         id: 11,
-        src: '../../../public/photography/Newyork11.png',
+        src: '/photography/Newyork11.png',
         category: 'New York',
         date: '2025-09-20',
         title: 'Brooklyn Bridge at Morning',
@@ -98,7 +98,7 @@ export type Memory = {
       },
       {
         id: 12,
-        src: '../../../public/photography/Newyork12.png',
+        src: '/photography/Newyork12.png',
         category: 'New York',
         date: '2025-09-20',
         title: 'NYC Road view',
@@ -114,7 +114,7 @@ export type Memory = {
     //   },
       {
         id: 14,
-        src: '../../../public/photography/Chicago14.png',
+        src: '/photography/Chicago14.png',
         category: 'Chicago',
         date: '2025-06-07',
         title: 'Evening like this at montrose beach',
@@ -122,7 +122,7 @@ export type Memory = {
       },
       {
         id: 15,
-        src: '../../../public/photography/Chicago15.png',
+        src: '/photography/Chicago15.png',
         category: 'Food',
         date: '2025-05-17',
         title: 'Delicious Hashbrowns',
@@ -130,7 +130,7 @@ export type Memory = {
       },
       {
         id: 16,
-        src: '../../../public/photography/Chicago16.png',
+        src: '/photography/Chicago16.png',
         category: 'Chicago',
         date: '2025-04-05',
         title: 'Building near Washington & Wabash',
@@ -138,7 +138,7 @@ export type Memory = {
       },
       {
         id: 17,
-        src: '../../../public/photography/Chicago17.png',
+        src: '/photography/Chicago17.png',
         category: 'Chicago',
         date: '2025-03-28',
         title: 'Jackson Boulevard Bridge',
@@ -146,7 +146,7 @@ export type Memory = {
       },
       {
         id: 18,
-        src: '../../../public/photography/Chicago18.png',
+        src: '/photography/Chicago18.png',
         category: 'Food',
         date: '2025-03-22',
         title: 'Melt & Dip Chicago',
@@ -154,7 +154,7 @@ export type Memory = {
       },
       {
         id: 19,
-        src: '../../../public/photography/Chicago19.png',
+        src: '/photography/Chicago19.png',
         category: 'Chicago',
         date: '2025-02-17',
         title: 'Chicago Surburbs in Snow',
@@ -162,7 +162,7 @@ export type Memory = {
       },
       {
         id: 20,
-        src: '../../../public/photography/Chicago20.png',
+        src: '/photography/Chicago20.png',
         category: 'Chicago',
         date: '2025-01-11',
         title: 'After snow sunset',
@@ -170,7 +170,7 @@ export type Memory = {
       },
       {
         id: 21,
-        src: '../../../public/photography/Chicago21.png',
+        src: '/photography/Chicago21.png',
         category: 'Chicago',
         date: '2024-08-29',
         title: 'Fall Colors morning surburbs',
@@ -178,7 +178,7 @@ export type Memory = {
       },
       {
         id: 22,
-        src: '../../../public/photography/Chicago22.png',
+        src: '/photography/Chicago22.png',
         category: 'Chicago',
         date: '2024-07-10',
         title: 'Goldern Hour at bloomingdale trail',
@@ -186,7 +186,7 @@ export type Memory = {
       },
       {
         id: 23,
-        src: '../../../public/photography/Chicago23.png',
+        src: '/photography/Chicago23.png',
         category: 'Chicago',
         date: '2024-07-04',
         title: 'Pink Sunset at bloomingdale trail',

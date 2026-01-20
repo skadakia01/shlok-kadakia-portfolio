@@ -45,7 +45,7 @@ const publications: Publication[] = [
       'This paper introduces a novel SLA-aware dynamic weighted priority scheduling algorithm for fog computing environments, optimizing resource allocation based on real-time workload and service level agreements.',
     tags: ['Edge Computing', 'Scheduling', 'Edge Computing', 'Scheduling', 'Fog Computing'],
     logo: '/logos/IEEE.png',
-    paperLink: '../public/research/SLA Aware Dynamic Weighted Priority Scheduling for Fog Computing.pdf',
+    paperLink: '/research/SLA Aware Dynamic Weighted Priority Scheduling for Fog Computing.pdf',
     codeLink: 'https://github.com/00adam001/SLA-DWP-fog-scheduler',
   },
 ];
